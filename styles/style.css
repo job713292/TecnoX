@@ -7,15 +7,17 @@
     --botones: #001c4d;
     --botones-hover: #0b1135;
     --blanco-transparente: rgba(255, 255, 255, 0.5);
+    --letras: #ffffff;
   }
 
   *{
     font-family: "Archivo Narrow", sans-serif;
+    color: var(--letras);
   }
   
   /* ======== Fondo ======== */
   body {
-    background: linear-gradient(to bottom, #001c4d, #FBE4D8);
+    background: linear-gradient(to bottom, #000000, #525252);
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -59,18 +61,15 @@
   .card {
     display: inline-block;
     width: 100%;
-    margin-bottom: 15px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   }
   
   .card img {
     width: 100%;
-    height: auto;
     object-fit: cover;
     border-radius: 12px;
-    user-select: none;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
   }
   
   /* Animación scroll */
@@ -109,17 +108,17 @@
   .input-group input {
     background: transparent;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ffffff;
     outline: none;
     padding: 8px 0;
-    color: #000;
+    color: #ffffff;
     font-size: 14px;
     width: 100%;
   }
   
   ::placeholder {
-    color: #000;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 14px;
   }
   
   #submit {
@@ -157,7 +156,7 @@
   }
 
   label {
-    color: #000;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bold;
   }
